@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shark&Deal</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner">
+                        <a href="#" class="header__logo logo">
+                            <img src="icons/logo.svg" alt="Shark&Deal">
+                        </a>
+                        <nav class="header__nav hidden-mobile">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item">
+                                    <a href="#" class="header__nav-link">ГЛАВНАЯ</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="#" class="header__nav-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="#" class="header__nav-link">КОНТАКТЫ</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="header__burger-button burger-button visible-mobile" type="button"
+                            onclick="mobileOverlay.showModal()">
+                            <span class="visually-hidden">Open navigation menu</span>
+                        </button>
+                        <div class="header__phone phone hidden-mobile">8 (916) 345-21-75</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__body">
+                <div class="container">
+                    <div class="header__body-inner">
+                        <h1 class="header__title">
+                            Качественная базовая одежда для тебя
+                            <span>Comfort and aesthetics are the base of style</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="mobile-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <nav class="mobile-overlay__nav">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">ГЛАВНАЯ</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">КАТАЛОГ</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a href="#" class="mobile-overlay__link">КОНТАКТЫ</a>
+                </li>
+            </ul>
+            <div class="mobile-overlay__phone phone">8 (916) 345-21-75</div>
+        </nav>
+    </dialog>
+</body>
+
+</html>

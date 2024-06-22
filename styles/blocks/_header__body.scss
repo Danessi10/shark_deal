@@ -1,0 +1,30 @@
+.header {
+    &__body {
+        background: url("../images/header-img.jpg") center / cover no-repeat;
+        height: 100%;
+        flex: 1 1 auto;
+
+        &-inner {
+            padding-block: 50px;
+        }
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        max-width: 480px;
+        font-weight: 700;
+        font-size: 34px;
+        text-transform: uppercase;
+        color: var(--light);
+
+        & span {
+            font-weight: 400;
+        }
+
+        @include mobile {
+            font-size: 30px;
+        }
+    }
+}
